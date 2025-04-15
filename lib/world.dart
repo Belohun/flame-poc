@@ -6,11 +6,7 @@ import 'game.dart';
 class MyWorld extends World with HasGameRef<PocGame> {
   @override
   Future<void> onLoad() async {
-
-
     final backgroundComponent = BackgroundComponent();
-
-
 
     add(backgroundComponent);
   }

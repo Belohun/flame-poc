@@ -20,12 +20,25 @@ class MyApp extends StatelessWidget {
             right: 16,
             bottom: 16,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Row(
                   children: [
+                    Text("Rive"),
+                    const SizedBox(width: 8),
                     FloatingActionButton(onPressed: game.spawnRiveComponents, child: Icon(Icons.add)),
                     const SizedBox(width: 8),
                     FloatingActionButton(onPressed: game.despawnRiveComponents, child: Icon(Icons.remove)),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Text("Sprite"),
+                    const SizedBox(width: 8),
+                    FloatingActionButton(onPressed: game.spawnSpriteComponents, child: Icon(Icons.add)),
+                    const SizedBox(width: 8),
+                    FloatingActionButton(onPressed: game.despawnSpriteComponents, child: Icon(Icons.remove)),
                   ],
                 ),
               ],
